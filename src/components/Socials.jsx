@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Twitter, Send, Globe } from 'lucide-react';
+import { Twitter, Send,  } from 'lucide-react';
 
 export default function Socials() {
   const socials = [

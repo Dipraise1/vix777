@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu as MenuIcon, X as CloseIcon } from "lucide-react";
 
 const NavigationItem = ({ emoji, label, onClick }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -194,9 +194,9 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             aria-label="Toggle menu"
           >
             {isOpen ? (
-              <X className="w-6 h-6 text-gray-600 dark:text-gray-300" />
+              <CloseIcon className="w-6 h-6 text-gray-600 dark:text-gray-300" />
             ) : (
-              <Menu className="w-6 h-6 text-gray-600 dark:text-gray-300" />
+              <MenuIcon className="w-6 h-6 text-gray-600 dark:text-gray-300" />
             )}
           </motion.button>
         </div>
